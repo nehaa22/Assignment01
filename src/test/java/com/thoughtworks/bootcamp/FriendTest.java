@@ -11,4 +11,8 @@ public class FriendTest {
         Friend friend = new Friend("Cool",0.0,0.0);
         Assertions.assertEquals(0.0,friend.settingAmountToSpend());
     }
+
+
+
+
 }

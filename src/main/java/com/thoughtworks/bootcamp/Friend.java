@@ -13,7 +13,7 @@ public class Friend {
     }
 
     public double settingAmountToSpend() {
-        return 0.0;
+        return amountToSpend;
     }
 }
 
