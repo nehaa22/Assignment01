@@ -12,8 +12,8 @@ public class Friend {
         this.amountSpent = amountSpent;
     }
 
-    public double settingAmountToSpend() {
-        return amountToSpend;
+    public double settingAmountToSpend(Double amount) {
+        return amount;
     }
 }
 
