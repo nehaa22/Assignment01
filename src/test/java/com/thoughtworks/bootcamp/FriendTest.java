@@ -19,6 +19,13 @@ public class FriendTest {
        Assertions.assertEquals(100,friend.settingAmountToSpend(100.0));
    }
 
+    @Test
+    void GivenNegativeAmountSpentForSinglePerson_WhenCalculatedAmount_To_Spend_ThenShouldReturnThatAmount()
+    {
+        Friend friend = new Friend("Ashu",-100.0,0.0);
+        Assertions.assertEquals(-100,friend.settingAmountToSpend(-100.0));
+    }
+
 
 
 
