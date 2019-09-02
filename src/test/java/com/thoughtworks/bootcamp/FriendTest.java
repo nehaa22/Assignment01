@@ -52,7 +52,7 @@ public class FriendTest {
         Assertions.assertEquals(25,friend.calculateDividedAmount());
     }
 
-    void givenAmountSpentForTwoPerson_WhenCalculatedAmount_ThenShouldReturnDividedAmount()
+    void givenAmountSpentForTwoPerson_WhenCalculatedAmount_ThenShouldReturnDividedAmountof500()
     {
         String name;
         List<String> personInList = new ArrayList<String>();
@@ -65,5 +65,24 @@ public class FriendTest {
         Assertions.assertEquals(250,friend.calculateDividedAmount());
     }
 
+    void givenAmountSpentForTwoPerson_WhenCalculatedAmount_ThenShouldReturnDividedAmountof300()
+    {
+        String name;
+        List<String> personInList = new ArrayList<String>();
+        double amountSpent;
 
+        personInList.add("Ashu");
+        personInList.add("Bunny");
+
+        Friend friend = new Friend("Doggy",personInList,300.0);
+        Assertions.assertEquals(150,friend.calculateDividedAmount());
+    }
+
+    void givenAmountOfPerson_WhenCalculated_WhenCalculated_ThenShouldReturnDividesAmount()
+    {
+        List<String> personInList = new ArrayList<String>();
+        String name;
+        Friend friend = new Friend("Ashu",personInList,100.0);
+        Assertions.assertEquals(75,friend.calculateEachPersonAmount());
+    }
 }

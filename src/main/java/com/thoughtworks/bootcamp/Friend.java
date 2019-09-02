@@ -22,5 +22,12 @@ public class Friend {
     public double calculateDividedAmount() {
         return money / personInList.size();
     }
+
+    public double calculateEachPersonAmount() {
+
+        double amount = settingAmountToSpend(100.0);
+        double calculation = amount*3;
+        return  calculation;
+    }
 }
 
