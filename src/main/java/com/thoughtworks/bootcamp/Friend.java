@@ -25,7 +25,7 @@ public class Friend {
 
     public double calculateEachPersonAmount() {
 
-        double amount = settingAmountToSpend(100.0);
+        double amount = calculateDividedAmount();
         double calculation = amount*3;
         return  calculation;
     }

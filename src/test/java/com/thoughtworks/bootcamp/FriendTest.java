@@ -85,4 +85,6 @@ public class FriendTest {
         Friend friend = new Friend("Ashu",personInList,100.0);
         Assertions.assertEquals(75,friend.calculateEachPersonAmount());
     }
+
+
 }
