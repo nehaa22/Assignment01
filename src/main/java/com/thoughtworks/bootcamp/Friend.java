@@ -1,19 +1,26 @@
 package com.thoughtworks.bootcamp;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Friend {
 
     String name;
-    double amountToSpend;
-    double amountSpent;
+    List<String> personInList = new ArrayList<String>();
+    double money;
 
-    public Friend(String name, double amountToSpend, double amountSpent) {
+    public Friend(String name, List<String> personInList, double money) {
         this.name = name;
-        this.amountToSpend = amountToSpend;
-        this.amountSpent = amountSpent;
+        this.personInList = personInList;
+        this.money = money;
     }
 
-    public double settingAmountToSpend(Double amount) {
-        return amount;
+    public double settingAmountToSpend(Double amountSpent) {
+        return amountSpent;
+    }
+
+    public double calculateDividedAmount() {
+        return money / personInList.size();
     }
 }
 
