@@ -35,4 +35,22 @@ public class FriendTest {
         Friend friend = new Friend("Ashu",personInList,100.0);
         Assertions.assertEquals(100.0,friend.settingAmountToSpend(100.0));
     }
+
+    @Test
+    void givenAmountSpentForFourPerson_WhenCalculatedAmount_ThenShouldReturnDividedAmount()
+    {
+        String name;
+        List<String> personInList = new ArrayList<String>();
+       double amountSpent;
+
+        personInList.add("Ashu");
+        personInList.add("Bunny");
+        personInList.add("Catty");
+        personInList.add("Doggy");
+
+        Friend friend = new Friend("Ashu",personInList,100.0);
+        Assertions.assertEquals(25,friend.calculateDividedAmount());
+    }
+
+
 }
