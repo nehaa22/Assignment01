@@ -29,5 +29,12 @@ public class Friend {
         double calculation = amount*3;
         return  calculation;
     }
+
+    public double calculateBunnyAmount() {
+
+        double amount = calculateBunnyAmount();
+        double calculation = amount-150+25;
+        return  calculation;
+    }
 }
 

@@ -86,5 +86,13 @@ public class FriendTest {
         Assertions.assertEquals(75,friend.calculateEachPersonAmount());
     }
 
+    void givenAmountOfPersonBunny_WhenCalculated_WhenCalculated_ThenShouldReturnDividesAmount()
+    {
+        List<String> personInList = new ArrayList<String>();
+        String name;
+        Friend friend = new Friend("Bunny",personInList,500.0);
+        Assertions.assertEquals(325,friend.calculateBunnyAmount());
+    }
+
 
 }
