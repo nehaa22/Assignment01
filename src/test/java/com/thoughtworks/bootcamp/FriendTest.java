@@ -52,5 +52,18 @@ public class FriendTest {
         Assertions.assertEquals(25,friend.calculateDividedAmount());
     }
 
+    void givenAmountSpentForTwoPerson_WhenCalculatedAmount_ThenShouldReturnDividedAmount()
+    {
+        String name;
+        List<String> personInList = new ArrayList<String>();
+        double amountSpent;
+
+        personInList.add("Catty");
+        personInList.add("Doggy");
+
+        Friend friend = new Friend("Bunny",personInList,500.0);
+        Assertions.assertEquals(250,friend.calculateDividedAmount());
+    }
+
 
 }
